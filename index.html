@@ -1,16 +1,344 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ludilume</title>
-<style>body{font-family:Georgia,serif;background:#141210;color:#e8dfd2;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0}main{text-align:center;padding:2rem}h1{font-weight:normal;letter-spacing:.3em;text-transform:uppercase}a{color:#e8c879}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pawpon · Cozy cat capsule shop game for Android</title>
+<meta name="description" content="Work the night shift at a tiny capsule-toy shop, work the claw by hand and fill your shelves with collectible cats. Real odds before every pull. Free on Android.">
+<link rel="canonical" href="https://talhaabidj.github.io/">
+<meta name="theme-color" content="#120e16">
+<meta name="color-scheme" content="dark">
+<meta name="author" content="Talha Abid">
+<meta name="application-name" content="Pawpon">
+<meta name="apple-mobile-web-app-title" content="Pawpon">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pawpon">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Pawpon · Every turn brings someone home">
+<meta property="og:description" content="Work the night shift at a tiny capsule-toy shop, work the claw by hand and fill your shelves with collectible cats. Real odds before every pull. Free on Android.">
+<meta property="og:url" content="https://talhaabidj.github.io/">
+<meta property="og:image" content="https://talhaabidj.github.io/assets/img/og-pawpon.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Pawpon logo over a lantern-lit capsule shop at night">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pawpon · Every turn brings someone home">
+<meta name="twitter:description" content="Work the night shift at a tiny capsule-toy shop, work the claw by hand and fill your shelves with collectible cats. Real odds before every pull. Free on Android.">
+<meta name="twitter:image" content="https://talhaabidj.github.io/assets/img/og-pawpon.jpg">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/Literata-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Nunito-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/img/hero-shop-1800.webp" as="image" fetchpriority="high">
+<link rel="stylesheet" href="/assets/css/site.css?v=20260924b">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://talhaabidj.github.io/#website","url":"https://talhaabidj.github.io/","name":"Pawpon","inLanguage":"en","publisher":{"@id":"https://talhaabidj.github.io/#studio"}},{"@type":"Organization","@id":"https://talhaabidj.github.io/#studio","name":"Ludilume","url":"https://talhaabidj.github.io/","email":"talhaabidj1@gmail.com","logo":"https://talhaabidj.github.io/assets/img/icon-512.png","founder":{"@id":"https://talhaabidj.github.io/#developer"}},{"@type":"Person","@id":"https://talhaabidj.github.io/#developer","name":"Talha Abid","worksFor":{"@id":"https://talhaabidj.github.io/#studio"},"sameAs":["https://github.com/talhaabidj"]},{"@type":"WebPage","@id":"https://talhaabidj.github.io/#webpage","url":"https://talhaabidj.github.io/","name":"Pawpon: a cozy cat capsule shop game for Android","description":"Work the night shift at a tiny capsule-toy shop, work the claw by hand and fill your shelves with collectible cats. Real odds before every pull. Free on Android.","isPartOf":{"@id":"https://talhaabidj.github.io/#website"},"inLanguage":"en","dateModified":"2026-09-24"},{"@type":["VideoGame","MobileApplication"],"@id":"https://talhaabidj.github.io/#game","name":"Pawpon","alternateName":"Pawpon: Cat Capsule Shop","url":"https://talhaabidj.github.io/","description":"Work the night shift at a tiny capsule-toy shop, work the claw by hand and fill your shelves with collectible cats. Real odds before every pull. Free on Android.","image":"https://talhaabidj.github.io/assets/img/og-pawpon.jpg","screenshot":["https://talhaabidj.github.io/assets/img/shots/01-midnight-shop-1280.webp","https://talhaabidj.github.io/assets/img/shots/02-tart-tabby-1280.webp","https://talhaabidj.github.io/assets/img/shots/03-catbook-1280.webp","https://talhaabidj.github.io/assets/img/shots/04-night-jobs-1280.webp"],"genre":["Simulation","Casual","Collecting"],"gamePlatform":"Android","operatingSystem":"Android 7.0 or later","applicationCategory":"GameApplication","playMode":"SinglePlayer","author":{"@id":"https://talhaabidj.github.io/#developer"},"publisher":{"@id":"https://talhaabidj.github.io/#studio"},"installUrl":"https://play.google.com/store/apps/details?id=com.pawpon","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"},"inLanguage":"en"}]}</script>
 </head>
-<body>
-<main>
-<h1>Ludilume</h1>
-<p>Maker of <strong>Pawpon</strong> — a cozy first-person midnight cat capsule-shop game.</p>
-<p><a href="https://talhaabidj.github.io/pawpon-privacy/">Pawpon privacy policy</a></p>
+<body class="page-home">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Pawpon home">
+      <img src="/assets/img/logo-440.webp" width="440" height="147" alt="Pawpon">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="/#the-game" aria-current="page">The game</a>
+      <a href="/#the-cats">Cats</a>
+      <a href="/odds/">Odds</a>
+      <a href="/support/">Help</a>
+      <a href="/press/">Press</a>
+      <a class="btn btn-ghost nav-play" href="https://play.google.com/store/apps/details?id=com.pawpon" rel="noopener"><svg class="play-logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M3.6 1.8 13.2 12 3.6 22.2a1.4 1.4 0 0 1-.6-1.2V3a1.4 1.4 0 0 1 .6-1.2z"/><path fill="#34A853" d="M3.6 1.8a1.5 1.5 0 0 1 1.5 0l11.6 6.7L13.2 12z"/><path fill="#FBBC04" d="m16.7 8.5 3.9 2.3a1.4 1.4 0 0 1 0 2.4l-3.9 2.3-3.5-3.5z"/><path fill="#EA4335" d="M13.2 12l3.5 3.5-11.6 6.7a1.5 1.5 0 0 1-1.5 0z"/></svg>Google Play</a>
+      <a class="btn nav-cta" href="https://discord.gg/V4qutb4YAA" rel="noopener"><svg class="discord-logo" viewBox="0 0 127.14 96.36" aria-hidden="true"><path fill="currentColor" d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"/></svg>Join the Discord</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-art" aria-hidden="true">
+    <img src="/assets/img/hero-shop-1800.webp" srcset="/assets/img/hero-shop-960.webp 960w, /assets/img/hero-shop-1800.webp 1794w" sizes="100vw" width="1794" height="876" alt="" fetchpriority="high">
+  </div>
+  <div class="sky" data-stars="60" data-motes="14" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">A night-shift capsule shop for Android</p>
+      <h1 id="hero-title"><img class="hero-logo" src="/assets/img/logo-1000.webp" width="1000" height="333" alt="Pawpon"><span class="visually-hidden">, a cozy cat capsule shop game</span></h1>
+      <p class="hero-tagline">Every turn brings someone home.</p>
+      <p class="lede">Take the night shift at a little capsule shop on Lantern Row. Put a token in, take the joystick, and watch the claw carry a capsule to the chute. Then crack it open and see who came home. There are 36 cats in the machines, and every machine tells you its real odds before you spend a thing.</p>
+      <div class="btn-row">
+        <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.pawpon" rel="noopener">
+          <svg class="play-logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M3.6 1.8 13.2 12 3.6 22.2a1.4 1.4 0 0 1-.6-1.2V3a1.4 1.4 0 0 1 .6-1.2z"/><path fill="#34A853" d="M3.6 1.8a1.5 1.5 0 0 1 1.5 0l11.6 6.7L13.2 12z"/><path fill="#FBBC04" d="m16.7 8.5 3.9 2.3a1.4 1.4 0 0 1 0 2.4l-3.9 2.3-3.5-3.5z"/><path fill="#EA4335" d="M13.2 12l3.5 3.5-11.6 6.7a1.5 1.5 0 0 1-1.5 0z"/></svg><span><small>Get it on</small>Google Play</span>
+        </a>
+        <a class="btn btn-ghost" href="https://discord.gg/V4qutb4YAA" rel="noopener"><svg class="discord-logo" viewBox="0 0 127.14 96.36" aria-hidden="true"><path fill="currentColor" d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"/></svg>Join the Discord</a>
+      </div>
+      <ul class="hero-facts">
+        <li>Free to play</li>
+        <li>Android 7.0 and up</li>
+        <li>Plays offline</li>
+        <li>No account needed</li>
+      </ul>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#the-game" aria-label="Scroll to the game"></a>
+</section>
+
+<section class="section" id="the-game" aria-labelledby="ritual-title">
+  <div class="wrap">
+    <div class="section-head center rise">
+      <p class="eyebrow">The ritual</p>
+      <h2 id="ritual-title">Three small motions. One small cat.</h2>
+      <p class="lede">Pawpon is played in first person, with your hands on the machine. It is a slow game on purpose. The best part of a capsule is the second before it opens.</p>
+    </div>
+    <ol class="steps">
+      <li class="step glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M14.8 8.6a4.2 4.2 0 1 0 0 6.8 3.4 3.4 0 1 1 0-6.8z"/></svg></div>
+        <h3>Drop a token</h3>
+        <p>A token goes in the slot. You earn tokens by working the shift, from the daily free pull and by finishing sets. They are never sold, not at any price.</p>
+      </li>
+      <li class="step glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16M12 4v6"/><path d="M8.5 16.5L9 12h6l.5 4.5"/><path d="M9 12l-2.5 5M15 12l2.5 5"/><circle cx="12" cy="19.5" r="2"/></svg></div>
+        <h3>Work the claw</h3>
+        <p>Your hands take the joystick and the claw glides over the pile. Hit GRAB, watch it close on a capsule and lift, then DROP it down the chute.</p>
+      </li>
+      <li class="step glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 13a8 8 0 0 0 16 0z"/><path d="M5.5 9.5a7 7 0 0 1 12.2-2.8"/><path d="M9 4.5l1.2 2M15.5 3.5l-.6 2.2M19.5 7l-1.8 1.2"/></svg></div>
+        <h3>Crack it open</h3>
+        <p>The capsule rolls into the chute and you pop the shell. A new cat goes on your shelf. A duplicate turns into Moon Dust, so nothing is wasted.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="shots-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head rise">
+      <p class="eyebrow">Inside the shop</p>
+      <h2 id="shots-title">A real place, in miniature</h2>
+    </div>
+    <div class="shots" tabindex="0" aria-label="Screenshots from the game">
+      <figure class="shot">
+        <img src="/assets/img/shots/01-midnight-shop-1280.webp" srcset="/assets/img/shots/01-midnight-shop-640.webp 640w, /assets/img/shots/01-midnight-shop-1280.webp 1280w" sizes="(max-width: 900px) 78vw, 720px" width="1280" height="720" loading="lazy" decoding="async" alt="First-person view of a row of pastel capsule cabinets, each labelled with its set of cats.">
+        <figcaption><strong>The shop floor.</strong>Each cabinet holds its own set of cats, and tells you how many you have found.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/assets/img/shots/02-tart-tabby-1280.webp" srcset="/assets/img/shots/02-tart-tabby-640.webp 640w, /assets/img/shots/02-tart-tabby-1280.webp 1280w" sizes="(max-width: 900px) 78vw, 720px" width="1280" height="720" loading="lazy" decoding="async" alt="A reveal card for Tart Tabby, an uncommon cat sitting in a tart case.">
+        <figcaption><strong>A new arrival.</strong>Tart Tabby, uncommon, number two of the Kitty Cakes set.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/assets/img/shots/03-catbook-1280.webp" srcset="/assets/img/shots/03-catbook-640.webp 640w, /assets/img/shots/03-catbook-1280.webp 1280w" sizes="(max-width: 900px) 78vw, 720px" width="1280" height="720" loading="lazy" decoding="async" alt="The Catbook, showing a completed Kitty Cakes shelf and the mythical Halo Cake.">
+        <figcaption><strong>The Catbook.</strong>Fill a shelf and the old keeper leaves you a postcard.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/assets/img/shots/04-night-jobs-1280.webp" srcset="/assets/img/shots/04-night-jobs-640.webp 640w, /assets/img/shots/04-night-jobs-1280.webp 1280w" sizes="(max-width: 900px) 78vw, 720px" width="1280" height="720" loading="lazy" decoding="async" alt="The night's job list: fix a jammed mechanism, wipe the glass, pick up trash.">
+        <figcaption><strong>The night's work.</strong>Clear a jam, wipe the glass, take out the trash. The shop pays you for it.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="section" id="try-a-turn" aria-labelledby="pull-title">
+  <div class="wrap pull">
+    <div class="rise">
+      <p class="eyebrow">Try it here</p>
+      <h2 id="pull-title">Have a go at the claw</h2>
+      <p>This is a paper cut-out of the real thing. Pick a cabinet, drag the joystick to line the claw up, press GRAB, then DROP it down the chute. Aim wherever you like: just as in the game, the odds decide the cat. They are the game's real starting odds for a clean cabinet with no upgrades and no pity built up yet, and heavy capsules can slip at the game's real rates too.</p>
+      <div class="machine-picker" aria-label="Choose a cabinet"></div>
+      <ul class="demo-odds" aria-label="Odds for this cabinet"></ul>
+      <p class="btn-note demo-odds-note"></p>
+    </div>
+    <div class="rise" style="isolation:isolate">
+      <div class="cabinet">
+        <div class="cab-hood" aria-hidden="true"><span class="ear ear-l"></span><span class="ear ear-r"></span><div class="cab-sign"></div></div>
+        <div class="cab-canopy" aria-hidden="true"></div>
+        <div class="cab-window" aria-hidden="true">
+          <span class="pillar"></span>
+          <div class="cab-glass">
+            <span class="gantry"></span>
+            <div class="claw"><span class="trolley"></span><span class="cable"></span><span class="head"><i class="jaw jaw-l"></i><i class="jaw jaw-c"></i><i class="jaw jaw-r"></i></span><span class="held" hidden></span></div>
+            <span class="refill-door"><i class="refill-handle"></i></span>
+            <div class="pile"></div>
+            <span class="vent"></span>
+          </div>
+          <span class="pillar pillar-r"></span>
+        </div>
+        <div class="cab-deck">
+          <span class="deck-btn aux-btn" aria-hidden="true"></span>
+          <button class="deck-btn drop-btn" type="button" data-label="Drop" disabled>Drop</button>
+          <button class="deck-btn grab-btn" type="button" data-label="Grab">Grab</button>
+          <button class="stick" type="button" aria-label="Joystick: drag it, or use the left and right arrow keys, to move the claw"><span class="shaft"></span></button>
+        </div>
+        <div class="cab-lower" aria-hidden="true">
+          <span class="coin-box"></span>
+          <div class="prize-door"><span class="drop-capsule"></span></div>
+        </div>
+      </div>
+      <p class="pull-status btn-note center" aria-live="polite">Drag the joystick to aim, then press GRAB.</p>
+    </div>
+  </div>
+</section>
+
+<div class="reveal" role="dialog" aria-modal="true" aria-labelledby="reveal-name" aria-hidden="true">
+  <div class="reveal-card glass">
+    <p class="eyebrow new-flag" hidden>New to your shelf</p>
+    <img src="/assets/img/cats/kitty-cupcake-cat.webp" width="200" height="200" alt="">
+    <p class="set"></p>
+    <h3 id="reveal-name">Cupcake Cat</h3>
+    <p class="rarity-tag"></p>
+    <p class="quote"></p>
+    <button class="btn keep" type="button">Keep</button>
+  </div>
+</div>
+
+<section class="section" id="the-cats" aria-labelledby="cats-title" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head rise">
+      <p class="eyebrow">The collection</p>
+      <h2 id="cats-title">42 cats, seven sets, a few secrets</h2>
+      <p class="lede">Six cabinets hold six cats each, from a frosting kitten that smells of vanilla to things we would rather you met in person. The six Afterglow companions come with the Nightlight Pass and are never put in a machine.</p>
+    </div>
+    <div class="tabs cat-tabs" role="tablist" aria-label="Sets"></div>
+    <div id="cat-panel" role="tabpanel">
+      <div class="set-intro"></div>
+      <ul class="cat-grid"></ul>
+      <p class="found-count btn-note" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+<section class="section band" aria-labelledby="fair-title">
+  <div class="band-art" aria-hidden="true">
+    <img src="/assets/img/claw-night-1600.webp" srcset="/assets/img/claw-night-800.webp 800w, /assets/img/claw-night-1600.webp 1600w" sizes="100vw" width="1600" height="900" loading="lazy" decoding="async" alt="">
+  </div>
+  <div class="wrap">
+    <div class="rise">
+      <p class="eyebrow">Fair by design</p>
+      <h2 id="fair-title">The odds are printed on the glass</h2>
+      <p class="lede">Capsule machines are supposed to be a little thrilling. They are not supposed to be a trap. So we made a few rules and wrote them into the game.</p>
+      <ul class="promise-list">
+        <li><span class="tick"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><strong>Nothing sold is random</strong><span>Random pulls cost tokens, and tokens can only be earned. Everything in the store has a known result that you see before you pay.</span></div></li>
+        <li><span class="tick"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><strong>Real odds, before you spend</strong><span>Every cabinet has an odds sheet worked out for your luck right now. The starting numbers are on this website too.</span></div></li>
+        <li><span class="tick"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><strong>Every pull gets you closer</strong><span>A pity ladder guarantees each rarity within a set number of pulls, and the Lucky Meter shows you how close you are.</span></div></li>
+        <li><span class="tick"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span><div><strong>A dropped capsule costs nothing</strong><span>Heavy capsules sometimes slip from the claw. The retry is free, and try number 3 always lands.</span></div></li>
+      </ul>
+      <div class="ladder" aria-label="Pity ladder">
+        <div class="r-rare"><b>25</b><small>Rare</small></div>
+        <div class="r-epic"><b>60</b><small>Epic</small></div>
+        <div class="r-legendary"><b>120</b><small>Legendary</small></div>
+        <div class="r-mythical"><b>240</b><small>Mythical</small></div>
+      </div>
+      <a class="btn btn-ghost" href="/odds/">Read every number</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="features-title">
+  <div class="wrap">
+    <div class="section-head center rise">
+      <p class="eyebrow">On the night shift</p>
+      <h2 id="features-title">There is more to the shop than the machines</h2>
+    </div>
+    <div class="features">
+      <article class="feature glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6.5l3-3 3 3-3 3M17.5 3.5L9 12"/><path d="M8 11l5 5-5.5 5.5a2.1 2.1 0 0 1-3-3z"/></svg></div>
+        <h3>Night jobs</h3>
+        <p>Clear a jammed mechanism, wipe fingerprints off the glass, pick up after the customers. A finished shift pays your wages and covers the bills.</p>
+      </article>
+      <article class="feature glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 18 3-18"/></svg></div>
+        <h3>Grow the shop</h3>
+        <p>Open new cabinets and upgrade them with Star Gems. Each level tips the odds toward the rarer cats, and the prize card shows exactly how far before you commit.</p>
+      </article>
+      <article class="feature glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/><path d="M7 5V3M12 12v-2M17 19v-2"/></svg></div>
+        <h3>Shelves at home</h3>
+        <p>Every cat you bring home can sit on a shelf in your bedroom. Arrange them by set, by colour or by who you like best. Nobody is judging.</p>
+      </article>
+      <article class="feature glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="11" r="2"/><path d="M12 13v3"/></svg></div>
+        <h3>The Hush</h3>
+        <p>A quiet back room opens after a few nights. There is no roll in there at all: you choose the exact legendary or mythical cat you want and it comes home.</p>
+      </article>
+      <article class="feature glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <h3>Notes from M.</h3>
+        <p>The last keeper left in a hurry, mid-sentence. Their notes are taped to the machines and tucked into the sets, and a full shelf earns you a postcard.</p>
+      </article>
+      <article class="feature glass rise">
+        <div class="step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div>
+        <h3>Offline and unhurried</h3>
+        <p>No account to make and no internet needed to play. Your progress is saved on your phone, and the shop keeps your place whenever you put it down.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0" aria-labelledby="cta-title">
+  <div class="wrap">
+    <div class="cta glass rise">
+      <img class="app-tile" src="/assets/img/icon-256.webp" width="256" height="256" alt="The Pawpon icon: a tabby kitten peeking out of a red capsule" loading="lazy">
+      <div>
+        <p class="eyebrow">Come and say hello</p>
+        <h2 id="cta-title">Pawpon is made by one person, and it listens</h2>
+        <p>The Discord is where bugs get reported, ideas get argued about and new cats show up first. If you would rather write, email works just as well.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn" href="https://discord.gg/V4qutb4YAA" rel="noopener"><svg class="discord-logo" viewBox="0 0 127.14 96.36" aria-hidden="true"><path fill="currentColor" d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"/></svg>Join the Discord</a>
+        <a class="btn btn-ghost" href="/support/">Help and FAQ</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/json" id="game-data">{"rarities":["common","uncommon","rare","epic","legendary","mythical"],"machines":[{"id":"machine-neko","name":"Kitty Cakes","setId":"kitty-cakes","accentHue":18.0,"cats":{"common":"Cupcake Cat","uncommon":"Tart Tabby","rare":"Flaky Maine","epic":"Chiffon Puff","legendary":"Velvet Doll","mythical":"Halo Cake"},"clean":{"common":0.5317674479122471,"uncommon":0.2941692265046473,"rare":0.11766769060185893,"epic":0.04344653191453252,"legendary":0.01045432174193439,"mythical":0.0024947813247797974},"timeLocked":[]},{"id":"machine-train","name":"If I Fits, I Sits","setId":"if-i-fits-i-sits","accentHue":87.4,"cats":{"common":"Box Bun","uncommon":"Basket Bun","rare":"Pot Puss","epic":"Bowl Bean","legendary":"Kettle Kit","mythical":"Quantum Kit"},"clean":{"common":0.5349182763744428,"uncommon":0.30906389301634474,"rare":0.10104011887072809,"epic":0.040416047548291235,"legendary":0.011233283803863297,"mythical":0.0033283803863298667},"timeLocked":[]},{"id":"machine-moon","name":"Cats vs Cucumbers","setId":"cats-vs-cucumbers","accentHue":151.8,"cats":{"common":"Cuke Fright","uncommon":"Cuke Chomp","rare":"Cuke Buddy","epic":"Cuke Spa Cat","legendary":"Cuke Rider","mythical":"Cukitty"},"clean":{"common":0.5259336751902223,"uncommon":0.2858335191251208,"rare":0.1263384154533034,"epic":0.04664803032121971,"legendary":0.011884957725222522,"mythical":0.0033614021849114207},"timeLocked":[]},{"id":"machine-pixel","name":"Meme Meownia","setId":"cat-memes","accentHue":247.4,"cats":{"common":"Key Masher","uncommon":"Sir Frowns","rare":"Ceiling Pal","epic":"Prism Tail","legendary":"Stretchy","mythical":"Last Meme"},"clean":{"common":0.5313688786909002,"uncommon":0.3019141356198297,"rare":0.1026508061107421,"epic":0.04589094861421411,"legendary":0.013525753275768371,"mythical":0.004649477688545378},"timeLocked":[]},{"id":"machine-mix-a","name":"Loaf Legends","setId":"midnight-zoomies","accentHue":52.4,"cats":{"common":"Plain Loaf","uncommon":"Baguette","rare":"Cinna Swirl","epic":"Focaccia","legendary":"Brioche","mythical":"Everloaf"},"clean":{"common":0.5752085130859937,"uncommon":0.2991084268047167,"rare":0.08340523439746908,"epic":0.03221167673281564,"legendary":0.00805291918320391,"mythical":0.0020132297958009777},"timeLocked":[]},{"id":"machine-mix-b","name":"Astro Whiskers","setId":"cosmic-cat-club","accentHue":287.8,"cats":{"common":"Stardust","uncommon":"Orbit Tabby","rare":"Nebula Paws","epic":"Comet Chaser","legendary":"Nova Sphynx","mythical":"Void Empress"},"clean":{"common":0.5006418485237484,"uncommon":0.29525032092426184,"rare":0.11553273427471115,"epic":0.06161745827984595,"legendary":0.026957637997432605,"mythical":0.0},"timeLocked":["Void Empress"]}],"sets":[{"id":"kitty-cakes","name":"Kitty Cakes","theme":"Dessert-themed cats from a late-night feline bakery","postcard":"The bakery on the corner kept a saucer by the oven all winter. Now you know why the frosting cats always smell of vanilla.","premium":false,"accentHue":18.0,"cats":[{"id":"kitty-cupcake-cat","name":"Cupcake Cat","rarity":"common","flavor":"A tiny frosting kitten that always smells like vanilla.","timeLocked":false},{"id":"kitty-tart-tabby","name":"Tart Tabby","rarity":"uncommon","flavor":"A buttery tart cat with caramel stripes.","timeLocked":false},{"id":"kitty-mille-feuille","name":"Flaky Maine","rarity":"rare","flavor":"Layered pastry fur with perfect flaky ears.","timeLocked":false},{"id":"kitty-chiffon-whiskers","name":"Chiffon Puff","rarity":"epic","flavor":"Soft as cloud cake, sharp as cat reflexes.","timeLocked":false},{"id":"kitty-royal-velvet","name":"Velvet Doll","rarity":"legendary","flavor":"A regal dessert-cat served only on moonlit nights.","timeLocked":false},{"id":"kitty-celestial-cheesecake","name":"Halo Cake","rarity":"mythical","flavor":"A cosmic pastry spirit that appears once the shop is silent.","timeLocked":false}]},{"id":"if-i-fits-i-sits","name":"If I Fits, I Sits","theme":"The ancient law of cats: any container, however unlikely, is a seat","postcard":"Nobody on that street ever threw a box away. They left them out, open, like invitations.","premium":false,"accentHue":87.4,"cats":[{"id":"fits-cardboard-box","name":"Box Bun","rarity":"common","flavor":"The box said fragile. The box was correct: do not disturb.","timeLocked":false},{"id":"fits-basket","name":"Basket Bun","rarity":"uncommon","flavor":"The laundry has been evicted. The basket has a new purpose now.","timeLocked":false},{"id":"fits-plant-pot","name":"Pot Puss","rarity":"rare","flavor":"Waters itself with sunbeams. Botanically, probably a succulent.","timeLocked":false},{"id":"fits-glass-bowl","name":"Bowl Bean","rarity":"epic","flavor":"Liquid confirmed: given a bowl, the cat takes its shape.","timeLocked":false},{"id":"fits-tea-kettle","name":"Kettle Kit","rarity":"legendary","flavor":"Hums one soft note before the steam arrives. Do not brew.","timeLocked":false},{"id":"fits-quantum-crate","name":"Quantum Kit","rarity":"mythical","flavor":"Simultaneously inside and outside the crate until you look.","timeLocked":false}]},{"id":"cats-vs-cucumbers","name":"Cats vs Cucumbers","theme":"The eternal standoff between felines and the most suspicious vegetable","postcard":"The greengrocer swore he was being robbed nightly. He was, but only of dignity.","premium":false,"accentHue":151.8,"cats":[{"id":"cucumber-lounge","name":"Cuke Fright","rarity":"common","flavor":"Vertical takeoff achieved. The cucumber remains at large.","timeLocked":false},{"id":"cucumber-sniffer","name":"Cuke Chomp","rarity":"uncommon","flavor":"Fear is temporary. Crunch is forever.","timeLocked":false},{"id":"cucumber-side-eye","name":"Cuke Buddy","rarity":"rare","flavor":"Peace was negotiated. The cucumber is a friend now.","timeLocked":false},{"id":"cucumber-terrified","name":"Cuke Spa Cat","rarity":"epic","flavor":"Two slices over the eyes. The feud pauses for self-care.","timeLocked":false},{"id":"cucumber-rider","name":"Cuke Rider","rarity":"legendary","flavor":"The steed was chosen precisely because it cannot be trusted.","timeLocked":false},{"id":"cucumber-hybrid","name":"Cukitty","rarity":"mythical","flavor":"The war ended the only way it could: they became one.","timeLocked":false}]},{"id":"cat-memes","name":"Meme Meownia","theme":"Legends of the internet age, immortalized in capsule form","postcard":"Ask anyone on that street and the stories get taller. A cat that rode the last tram. A cat that answered a phone. I wrote them down anyway.","premium":false,"accentHue":247.4,"cats":[{"id":"meme-keyboard","name":"Key Masher","rarity":"common","flavor":"Struts across the keys at the exact moment of your deadline.","timeLocked":false},{"id":"meme-grumpy","name":"Sir Frowns","rarity":"uncommon","flavor":"Has reviewed your offering of affection. Rating: fine, I guess.","timeLocked":false},{"id":"meme-ceiling","name":"Ceiling Pal","rarity":"rare","flavor":"Watches everything from above. Sees all snacks before you do.","timeLocked":false},{"id":"meme-nyan","name":"Prism Tail","rarity":"epic","flavor":"Leaves a seven-color streak on every midnight lap of the shop.","timeLocked":false},{"id":"meme-longcat","name":"Stretchy","rarity":"legendary","flavor":"Scientists measured once. The tape ran out before the cat did.","timeLocked":false},{"id":"meme-overlord","name":"Last Meme","rarity":"mythical","flavor":"Old as the first cat picture, fresh as tomorrow's repost.","timeLocked":false}]},{"id":"midnight-zoomies","name":"Loaf Legends","theme":"Perfect bread-pose champions, tucked paws and all","postcard":"Every bench on the row had one loaf on it by four in the afternoon. The benches were warm. That was the whole reason.","premium":false,"accentHue":52.4,"cats":[{"id":"zoomies-sofa-sprint","name":"Plain Loaf","rarity":"common","flavor":"Paws tucked, tail wrapped, form flawless. The judges weep.","timeLocked":false},{"id":"zoomies-curtain-climber","name":"Baguette","rarity":"uncommon","flavor":"Long, golden, and best found resting on a sunny windowsill.","timeLocked":false},{"id":"zoomies-hallway-drift","name":"Cinna Swirl","rarity":"rare","flavor":"Curled one full turn past a loaf into something sweeter.","timeLocked":false},{"id":"zoomies-fridge-parkour","name":"Focaccia","rarity":"epic","flavor":"Extra airy, lightly dimpled where you dared to boop.","timeLocked":false},{"id":"zoomies-sonic","name":"Brioche","rarity":"legendary","flavor":"So rich and perfectly risen it is technically patisserie.","timeLocked":false},{"id":"zoomies-timewarp","name":"Everloaf","rarity":"mythical","flavor":"Has held the pose since before recorded breakfast.","timeLocked":false}]},{"id":"cosmic-cat-club","name":"Astro Whiskers","theme":"Spacefaring cats, stellar hunters, and void royalty","postcard":"The observatory let the strays in on cold nights. Someone up there decided that counted as astronomy.","premium":false,"accentHue":287.8,"cats":[{"id":"cosmic-stardust","name":"Stardust","rarity":"common","flavor":"A neighborhood cat carrying a tiny galaxy trail.","timeLocked":false},{"id":"cosmic-orbit","name":"Orbit Tabby","rarity":"uncommon","flavor":"Circles your desk lamp like a miniature moon.","timeLocked":false},{"id":"cosmic-nebula","name":"Nebula Paws","rarity":"rare","flavor":"Jumps through dust clouds of neon starlight.","timeLocked":false},{"id":"cosmic-comet","name":"Comet Chaser","rarity":"epic","flavor":"Treats comets like laser pointers.","timeLocked":false},{"id":"cosmic-supernova","name":"Nova Sphynx","rarity":"legendary","flavor":"Radiates enough heat to warm the whole shop.","timeLocked":false},{"id":"cosmic-void-empress","name":"Void Empress","rarity":"mythical","flavor":"A silent sovereign from the edge of space.","timeLocked":true}]},{"id":"afterglow-companions","name":"Afterglow Companions","theme":"Six gentle regulars who keep the supporter lamplight company","postcard":"","premium":true,"accentHue":null,"cats":[{"id":"afterglow-aurora","name":"Aurora","rarity":"common","flavor":"First light of the shift, curled up before the lamps come on.","timeLocked":false},{"id":"afterglow-cinder","name":"Cinder","rarity":"uncommon","flavor":"Sleeps closest to the heater and smells faintly of toast.","timeLocked":false},{"id":"afterglow-luma","name":"Luma","rarity":"rare","flavor":"Glows a little when the room is kind. The room is usually kind.","timeLocked":false},{"id":"afterglow-morrow","name":"Morrow","rarity":"epic","flavor":"Always watching the door for tomorrow to arrive early.","timeLocked":false},{"id":"afterglow-serein","name":"Serein","rarity":"legendary","flavor":"Named for rain that falls from a clear evening sky.","timeLocked":false},{"id":"afterglow-wick","name":"Wick","rarity":"mythical","flavor":"Keeps the last candle company until the morning takes over.","timeLocked":false}]}],"fumble":{"chanceByRarity":{"common":0.0,"uncommon":0.0,"rare":0.15,"epic":0.25,"legendary":0.35,"mythical":0.45},"attemptFalloff":0.5,"guaranteedAttempt":3}}</script>
+
 </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/img/logo-440.webp" width="440" height="147" alt="Pawpon" loading="lazy">
+        <p>A small capsule shop on Lantern Row, open from ten at night until six. Made by Ludilume, the one-person studio of Talha Abid.</p>
+      </div>
+      <div>
+        <h2>Play</h2>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=com.pawpon" rel="noopener">Pawpon on Google Play</a></li>
+          <li><a href="/#the-cats">Meet the cats</a></li>
+          <li><a href="/odds/">Odds and fair play</a></li>
+          <li><a href="https://discord.gg/V4qutb4YAA" rel="noopener">Discord</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Help</h2>
+        <ul>
+          <li><a href="/support/">Help and FAQ</a></li>
+          <li><a href="/support/#purchases">Purchases and refunds</a></li>
+          <li><a href="/delete-data/">Delete your data</a></li>
+          <li><a href="mailto:talhaabidj1@gmail.com">talhaabidj1@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>The fine print</h2>
+        <ul>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms of service</a></li>
+          <li><a href="/community/">Community guidelines</a></li>
+          <li><a href="/press/">Press kit</a></li>
+          <li><a href="/credits/">Credits and licences</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; 2026 Talha Abid (Ludilume). Pawpon and its cats are original work. All rights reserved.</p>
+      <p>No cookies, no trackers. Just cats.</p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/site.js?v=20260924b" defer></script>
+<script src="/assets/js/pull.js?v=20260924b" defer></script>
+
 </body>
 </html>

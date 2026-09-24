@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://talhaabidj.github.io/sitemap.xml
