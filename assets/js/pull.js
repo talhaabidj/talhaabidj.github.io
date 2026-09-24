@@ -265,7 +265,7 @@
 
   function openReveal(cat) {
     revealCard.className = "reveal-card glass r-" + cat.rarity;
-    reveal.querySelector("img").src = "/assets/img/cats/" + cat.id + ".webp";
+    reveal.querySelector("img").src = "/assets/img/cats/" + cat.id + ".webp?v=" + data.v;
     reveal.querySelector("img").alt = cat.name;
     reveal.querySelector(".set").textContent = cat.setName;
     reveal.querySelector("h3").textContent = cat.name;
@@ -340,7 +340,7 @@
       var hidden = !set.premium && HIDDEN[cat.rarity] && !found[cat.id];
       var li = el("li", "cat-card r-" + cat.rarity + (hidden ? " hidden" : "") + (found[cat.id] ? " found" : ""));
       var img = el("img");
-      img.src = "/assets/img/cats/" + cat.id + ".webp";
+      img.src = "/assets/img/cats/" + cat.id + ".webp?v=" + data.v;
       img.alt = hidden ? "A " + RARITY_LABEL[cat.rarity].toLowerCase() + " cat you have not found yet" : cat.name;
       img.width = 200; img.height = 200;
       img.loading = "lazy";
