@@ -24,6 +24,12 @@
       });
     });
   }
+  document.querySelectorAll('.table-wrap').forEach(function (wrap) {
+    wrap.tabIndex = 0;
+    wrap.setAttribute('role', 'region');
+    var caption = wrap.querySelector('caption');
+    wrap.setAttribute('aria-label', caption ? caption.textContent + ' (scroll horizontally)' : 'Data table (scroll horizontally)');
+  });
   document.querySelectorAll(".sky").forEach(function (sky) {
     var canvas = document.createElement("canvas");
     canvas.setAttribute("aria-hidden", "true");

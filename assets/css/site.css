@@ -1138,7 +1138,7 @@ button.deck-btn:disabled { cursor: default; filter: saturate(0.5) brightness(0.8
   align-items: start;
   padding-bottom: clamp(64px, 9vw, 110px);
 }
-@media (max-width: 1080px) { .doc-layout { grid-template-columns: 1fr; } }
+@media (max-width: 1080px) { .doc-layout { grid-template-columns: minmax(0, 1fr); } }
 
 .toc { position: sticky; top: 92px; padding: 20px 18px; font-size: 0.92rem; }
 .toc h2 { font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-300); margin-bottom: 12px; }
@@ -1165,6 +1165,8 @@ button.deck-btn:disabled { cursor: default; filter: saturate(0.5) brightness(0.8
 @media (min-width: 1081px) { .toc summary { pointer-events: none; } }
 
 .paper {
+  min-width: 0;
+  overflow-wrap: anywhere;
   position: relative;
   padding: clamp(24px, 5vw, 56px);
   border-radius: var(--radius-lg);
@@ -1302,7 +1304,7 @@ button.deck-btn:disabled { cursor: default; filter: saturate(0.5) brightness(0.8
 .faq .answer { padding: 0 18px 16px; }
 .faq .answer > :last-child { margin-bottom: 0; }
 
-.contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 1.2em 0 0.4em; }
+.contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 12px; margin: 1.2em 0 0.4em; }
 .contact-card {
   display: block;
   padding: 18px;
@@ -1323,7 +1325,7 @@ button.deck-btn:disabled { cursor: default; filter: saturate(0.5) brightness(0.8
 .rbar { display: block; height: 5px; margin-top: 6px; border-radius: 3px; background: var(--parchment-line); overflow: hidden; min-width: 70px; }
 .rbar i { display: block; height: 100%; background: var(--rc); border-radius: inherit; }
 
-.press-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 1.2em 0 1.8em; }
+.press-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 14px; margin: 1.2em 0 1.8em; }
 .press-item { margin: 0; padding: 10px; border-radius: 14px; background: var(--parchment-hi); border: 1px solid var(--parchment-border); }
 .press-item img { width: 100%; border-radius: 8px; aspect-ratio: 16 / 9; object-fit: cover; background: var(--ink-700); }
 .press-item.square img { aspect-ratio: 1; object-fit: contain; }
@@ -1414,7 +1416,7 @@ button.deck-btn:disabled { cursor: default; filter: saturate(0.5) brightness(0.8
   .paper { padding: 26px 18px; border-radius: 18px; }
   .paper::before { inset: 6px; border-radius: 14px; }
   .summary { padding: 18px 18px; }
-  .steps-list li { grid-template-columns: 34px 1fr; gap: 12px; padding: 14px; }
+  .steps-list li { grid-template-columns: 34px minmax(0, 1fr); gap: 12px; padding: 14px; }
   .steps-list li::before { width: 34px; height: 34px; font-size: 1rem; }
   .paper th, .paper td { padding: 10px 11px; }
   .faq summary { padding: 14px 44px 14px 14px; }

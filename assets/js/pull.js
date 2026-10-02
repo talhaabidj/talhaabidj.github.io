@@ -8,7 +8,6 @@
   var PIPS = { common: 1, uncommon: 2, rare: 3, epic: 4, legendary: 5, mythical: 6 };
   var CAPSULE_COLOURS = ["#f19aa1", "#f3c969", "#8fd3a8", "#8cc1ea", "#c3a3ef", "#f3a15a", "#f5e2a0", "#7fd8d0"];
   var STORE_KEY = "pawpon.site.found";
-  var HIDDEN = { legendary: true, mythical: true };
 
   var found = {};
   try { found = JSON.parse(window.localStorage.getItem(STORE_KEY) || "{}") || {}; } catch (e) { found = {}; }
@@ -311,9 +310,23 @@
     var t = el("button", "chip", set.name);
     t.type = "button";
     t.setAttribute("role", "tab");
+    t.id = "collection-" + set.id;
     t.setAttribute("aria-selected", set.id === activeSet ? "true" : "false");
     t.setAttribute("aria-controls", "cat-panel");
     t.addEventListener("click", function () { activeSet = set.id; renderGallery(); });
+    t.addEventListener("keydown", function (e) {
+      var all = Array.from(tabs.querySelectorAll('[role="tab"]'));
+      var i = all.indexOf(t), target;
+      if (e.key === "ArrowRight") target = (i + 1) % all.length;
+      else if (e.key === "ArrowLeft") target = (i + all.length - 1) % all.length;
+      else if (e.key === "Home") target = 0;
+      else if (e.key === "End") target = all.length - 1;
+      else return;
+      e.preventDefault();
+      all[target].click();
+      all[target].focus();
+      all[target].scrollIntoView({ block: "nearest", inline: "nearest" });
+    });
     t.setAttribute("data-id", set.id);
     tabs.appendChild(t);
   });
@@ -321,35 +334,32 @@
   function renderGallery() {
     var set = setById[activeSet];
     tabs.querySelectorAll(".chip").forEach(function (t) {
-      t.setAttribute("aria-selected", t.getAttribute("data-id") === activeSet ? "true" : "false");
+      var selected = t.getAttribute("data-id") === activeSet;
+      t.setAttribute("aria-selected", selected ? "true" : "false");
+      t.tabIndex = selected ? 0 : -1;
     });
+    document.getElementById("cat-panel").setAttribute("aria-labelledby", "collection-" + activeSet);
     intro.textContent = "";
     var head = el("div");
     head.appendChild(el("h3", null, set.name));
     head.appendChild(el("p", null, set.premium
-      ? "Six companions who come with the Nightlight Pass. They are never in a machine, so nobody has to gamble for them."
+      ? "Six companions included with the optional Nightlight Pass."
       : set.theme + "."));
     intro.appendChild(head);
-    if (set.postcard) {
-      var pc = el("blockquote", "postcard", set.postcard);
-      pc.appendChild(el("cite", null, "— a postcard from M."));
-      intro.appendChild(pc);
-    }
     grid.textContent = "";
     set.cats.forEach(function (cat) {
-      var hidden = !set.premium && HIDDEN[cat.rarity] && !found[cat.id];
-      var li = el("li", "cat-card r-" + cat.rarity + (hidden ? " hidden" : "") + (found[cat.id] ? " found" : ""));
+      var li = el("li", "cat-card r-" + cat.rarity + (found[cat.id] ? " found" : ""));
       var img = el("img");
       img.src = "/assets/img/cats/" + cat.id + ".webp?v=" + data.v;
-      img.alt = hidden ? "A " + RARITY_LABEL[cat.rarity].toLowerCase() + " cat you have not found yet" : cat.name;
+      img.alt = cat.name;
       img.width = 200; img.height = 200;
       img.loading = "lazy";
       img.decoding = "async";
       li.appendChild(img);
-      li.appendChild(el("span", "name", hidden ? "? ? ?" : cat.name));
+      li.appendChild(el("span", "name", cat.name));
       li.appendChild(el("span", "rar", RARITY_LABEL[cat.rarity]));
       if (found[cat.id]) li.appendChild(el("span", "flag", "Found"));
-      if (!hidden) li.title = cat.flavor;
+      li.title = cat.flavor;
       grid.appendChild(li);
     });
     var total = 0, got = 0;
@@ -359,7 +369,7 @@
     });
     counter.textContent = got
       ? "You have turned up " + got + " of " + total + " on this page. The rest are waiting in the game."
-      : "Legendary and mythical cats stay in shadow until you find them. Try the claw above.";
+      : "Meet the collection. Try the claw below to start your browser shelf.";
   }
 
   showMachine(machine);
