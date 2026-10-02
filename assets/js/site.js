@@ -24,6 +24,11 @@
       });
     });
   }
+  if (header && document.body.classList.contains("page-document")) {
+    var onScroll = function () { header.classList.toggle("scrolled", window.scrollY > 40); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
   document.querySelectorAll('.table-wrap').forEach(function (wrap) {
     wrap.tabIndex = 0;
     wrap.setAttribute('role', 'region');

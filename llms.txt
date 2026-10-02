@@ -9,7 +9,7 @@ Pawpon is a cozy first-person collecting game for Android by Ludilume, the one-p
 - Platform: Android, on Google Play: https://play.google.com/store/apps/details?id=com.pawpon
 - Price: free to play, with optional in-app purchases
 - Current version: 1.1.2
-- Engine: Godot. Single player, plays offline, English.
+- Engine: Godot. Single player, English. Needs an internet connection at startup for sign-in and cloud saves.
 - Cats: 42 collectible cats in 7 sets (Kitty Cakes; If I Fits, I Sits; Cats vs Cucumbers; Meme Meownia; Loaf Legends; Astro Whiskers; Afterglow Companions)
 - Pulls cost tokens, and tokens are only earned by playing. They are never sold.
 - The store sells currencies with stated contents, used to unlock and upgrade cabinets or to pick a specific cat. Every cabinet's odds, at every upgrade level, are published: https://talhaabidj.github.io/odds/
