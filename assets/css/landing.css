@@ -273,3 +273,12 @@ html { scroll-padding-top: calc(var(--header-height) + env(safe-area-inset-top, 
   .reveal-card .quote { font-size: .9rem; margin: 8px 0 12px; }
   .reveal-card .keep { grid-column: 1 / -1; justify-self: center; min-height: 44px; }
 }
+
+.landing-copy h1 .hero-brand { display: block; text-shadow: none; }
+.home-faq { background: #f2ecdf; color: #493e41; padding: 84px 0 72px; }
+.home-faq .wrap { max-width: 860px; }
+.home-faq .kicker { color: #8c6750; }
+.home-faq h2 { color: #302735; margin: 0 0 22px; }
+.home-faq h2 em { color: #9f6654; }
+.home-faq .answer a { color: #8c4f3c; }
+@media (max-width: 700px) { .home-faq { padding: 60px 0 52px; } }
