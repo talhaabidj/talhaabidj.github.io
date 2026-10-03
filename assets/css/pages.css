@@ -189,3 +189,63 @@
  .page-document .paper { border: 0; padding: 0; }
 }
 .page-document .paper > h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+
+@media (max-width: 700px) {
+ .game-section, .collection-section, .demo-section { padding: 40px 0; }
+ .page-home .kicker { margin-bottom: 12px; }
+ .section-heading { margin-bottom: 20px; }
+ .section-heading > p { margin-top: 10px; }
+ .play-loop { margin-top: 20px; }
+ .collection-section .tabs { margin-top: 20px; }
+ .collection-section .set-intro { margin-bottom: 14px; }
+ .collection-section .cat-card { padding: 12px 6px 16px; border-radius: 64px 64px 10px 10px; }
+ .collection-section .found-count { margin-top: 16px; }
+ .demo-copy .machine-picker { margin: 20px 0; }
+ .demo-details summary { padding: 14px 0; }
+ .demo-footnote { margin-top: 12px; }
+ .demo-section .pull { gap: 20px; }
+ .machine-stage .pull-status { margin-bottom: 0; }
+ .fair-strip { padding: 20px 0; }
+ .fair-strip .wrap { gap: 6px; }
+ .download-inner { padding-block: 56px; }
+ .download-inner > p:not(.kicker) { margin: 16px auto 22px; }
+ .community-link { margin-top: 6px; }
+
+ .site-footer, .page-home .site-footer { padding-top: 40px; }
+ .site-footer .footer-grid, .page-home .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 18px; }
+ .site-footer .footer-brand { grid-column: 1 / -1; display: flex; align-items: center; gap: 18px; }
+ .site-footer .footer-brand img { width: 112px; margin: 0; flex: none; }
+ .site-footer .footer-brand p { margin: 0; font-size: .8rem; line-height: 1.6; }
+ .site-footer .footer-grid > div:last-child { grid-column: 1 / -1; }
+ .site-footer .footer-grid > div:last-child ul { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 18px; }
+ .site-footer h2 { margin-bottom: 4px; }
+ .site-footer li a { min-height: 40px; padding-block: 9px; }
+ .site-footer .footer-base, .page-home .footer-base { margin-top: 24px; padding-top: 16px; gap: 6px; }
+
+ .guide-hero { min-height: 0; padding: 104px 0 80px; }
+ .guide-hero .crumbs { margin-bottom: 18px; }
+ .guide-hero .eyebrow { margin-bottom: 10px; }
+ .guide-hero h1 { margin-bottom: 14px; }
+ .guide-hero .meta { margin-top: 14px; }
+ .guide-shortcuts { margin-top: -50px; gap: 8px; }
+ .guide-shortcuts a { padding: 12px 52px 12px 16px; }
+ .guide-shortcuts span { margin-bottom: 0; }
+ .guide-shortcuts b { width: 30px; height: 30px; margin-top: -15px; }
+ .page-document .doc-layout { padding-top: 20px; padding-bottom: 32px; gap: 16px; }
+ .page-document .toc { padding: 14px 16px; }
+ .guide-host { gap: 14px; margin-bottom: 12px; padding-bottom: 12px; }
+ .host-capsule { width: 64px; }
+ .guide-host figcaption em { font-size: .8rem; margin-top: 2px; }
+ .page-document .paper { padding: 22px 18px; }
+ .page-document .paper h2, .paper h2 { margin-top: 1.4em; padding-top: 1em; margin-bottom: .45em; }
+ .page-document .paper h3 { margin-top: 1.2em; }
+ .page-document .faq summary { padding: 16px 40px 16px 12px; }
+ .page-document .contact-cards { margin-block: 16px; gap: 10px; }
+ .page-document .contact-card { padding: 18px; }
+ .page-document .steps-list li { padding: 16px 0; }
+ .guide-outro { padding: 40px 0; }
+ .guide-outro .wrap { gap: 18px; }
+
+ .guide-lost { min-height: 0; padding: 40px 0; }
+ .guide-lost .lost-cat { width: 128px; height: 128px; margin-bottom: 14px; }
+}
